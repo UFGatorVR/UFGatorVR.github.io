@@ -13,14 +13,14 @@ AFRAME.registerComponent('vidhandler', {
     }, 
     tick:function(){ 
         // runs every tick, does nothing
-        if(!document.querySelector('#marker').object3D.visible && this.playing) {
-            document.querySelector("#video-src").pause();
-            this.playing=false;
-        }
-        else if (document.querySelector('#marker').object3D.visible && !this.playing) {
-            document.querySelector("#video-src").play();
-            this.playing = true;
-        }
+        // if(!document.querySelector('#marker').object3D.visible && this.playing) {
+        //     document.querySelector("#video-src").pause();
+        //     this.playing=false;
+        // }
+        // else if (document.querySelector('#marker').object3D.visible && !this.playing) {
+        //     document.querySelector("#video-src").play();
+        //     this.playing = true;
+        // }
 
     },
 
