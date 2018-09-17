@@ -7,8 +7,8 @@ AFRAME.registerComponent('vidhandler', {
             .catch(function(error){
                 window.addEventListener('touchstart',function(){
                     document.querySelector("#video-src").play();
-                    console.log("Debug/play/catch");
                 });
+                console.log("Debug/play/catch");
             }).then(function(){
             });
     }, 
