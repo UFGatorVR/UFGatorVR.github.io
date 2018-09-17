@@ -14,11 +14,11 @@ AFRAME.registerComponent('vidhandler', {
     tick:function(){ 
         // runs every tick, does nothing
         if(!document.querySelector('#marker').object3D.visible && this.playing) {
-            this.video.pause();
+            document.querySelector("#video-src").pause();
             this.playing=false;
         }
         else if (document.querySelector('#marker').object3D.visible && !this.playing) {
-            this.video.play();
+            document.querySelector("#video-src").play();
             this.playing = true;
         }
 
