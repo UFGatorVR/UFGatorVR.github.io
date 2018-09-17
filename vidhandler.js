@@ -8,7 +8,6 @@ AFRAME.registerComponent('vidhandler', {
                 window.addEventListener('touchstart',function(){
                     document.querySelector("#video-src").play();
                 });
-                console.log("Debug/play/catch");
             }).then(function(){
             });
     }, 
