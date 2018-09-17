@@ -7,23 +7,38 @@
 <script src="vidhandler.js"></script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs="trackingMethod: best;">
-      <!-- Import your assets: video, audio, image -->
+    <!-- <a-scene embedded arjs="trackingMethod: best;">
+      Import your assets: video, audio, image
       <a-assets> 
         <video type="video/mp4" id="video-src" muted loop="true" src="./gator-vr-promo.mp4" webkit-playsinline playsinline controls></video>
       </a-assets> 
   
-      <!-- <a-marker id="marker" type="pattern" url="./pattern-marker.patt">
+      <a-marker id="marker" type="pattern" url="./pattern-marker.patt">
           <a-video vidhandler id="video-screen" src="#video-src" rotation="-90 0 0" width="4" height="3" play="true"></a-video>
-      </a-marker> -->
+      </a-marker>
 
       <a-marker id="marker" preset="hiro">
           <a-video vidhandler id="video-screen" src="#video-src" rotation="-90 0 0" width="4" height="3" play="true"></a-video>
-          <!-- <a-plane position='0 1 0' scale="2 2 2" width="2" rotation="-90 0 0" material='transparent:true; opacity: 0.8; src:#video-src'></a-plane> -->
+          <a-plane position='0 1 0' scale="2 2 2" width="2" rotation="-90 0 0" material='transparent:true; opacity: 0.8; src:#video-src'></a-plane>
       </a-marker>
       <a-entity camera></a-entity>
-      <!-- <a-marker-camera preset="hiro"></a-marker-camera>   -->
+      <a-marker-camera preset="hiro"></a-marker-camera>   -->
+      <a-scene embedded arjs="trackingMethod: best;">
+        <!-- Import your assets: video, audio, image -->
+        <a-assets> 
+          <video type="video/mp4" id="video-src" muted loop="true" src="./SampleVideo30s.mp4" webkit-playsinline playsinline controls></video>
+        </a-assets> 
+    
+        <!-- <a-marker id="marker" type="pattern" url="./pattern-marker.patt">
+            <a-video vidhandler id="video-screen" src="#video-src" rotation="-90 0 0" width="4" height="3" play="true"></a-video>
+        </a-marker> -->
+  
+        <a-marker id="marker" preset="hiro">
+            <a-video vidhandler id="video-screen" src="#video-src" rotation="-90 0 0" width="4" height="3" play="true"></a-video>
+            <!-- <a-plane position='0 1 0' scale="2 2 2" width="2" rotation="-90 0 0" material='transparent:true; opacity: 0.8; src:#video-src'></a-plane> -->
+        </a-marker>
+        <a-entity camera></a-entity>
+        <!-- <a-marker-camera preset="hiro"></a-marker-camera>   -->
   </body>
   
   </html>
-  
